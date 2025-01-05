@@ -10,9 +10,6 @@ def main():
     print ("")
     print_highest_count(highest_count)
 
-
-
-
 def character_list_sorted_alpha(dict):
     alphabetical = []
     for letter in dict:
@@ -51,9 +48,5 @@ def character_count(text):
             
         return char_count
          
-
-
-
-
 main()
      
