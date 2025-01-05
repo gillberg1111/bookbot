@@ -9,6 +9,7 @@ def main():
     print (f"{num_words} words found in the document")
     print ("")
     print_highest_count(highest_count)
+    print ("--- End report ---")
 
 def character_list_sorted_alpha(dict):
     alphabetical = []
