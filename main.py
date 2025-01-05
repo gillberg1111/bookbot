@@ -11,14 +11,16 @@ def main():
     print_highest_count(highest_count)
     print ("--- End report ---")
 
+def sort_on(dict):
+     return dict["count"]    
+
 def character_list_sorted_alpha(dict):
     alphabetical = []
     for letter in dict:
          if letter.isalpha() == True:
               alphabetical.append({"letter": letter, "count": dict[letter]})
-    alphabetical.sort(reverse = True, key=lambda item: item['count'])
+    alphabetical.sort(reverse = True, key=sort_on)
     return alphabetical     
-
 
 def print_highest_count(sorted_list):
      for i in range(0,len(sorted_list)):
